@@ -1,0 +1,29 @@
+:syn on
+:set number
+":set mouse=r
+"wrap around
+:set whichwrap=h,l,<,>,[,]
+:set backup
+:set backupdir=~/backupdir
+:set backupext=.bck
+
+:set nu
+:set ai
+:set sm
+:set laststatus=2
+":set foldmethod=manual
+":map // v%zf
+:map \\ /^\s\+/ <enter>
+:set showcmd
+:set showmode
+:set cindent
+:set ruler
+:set hlsearch
+:filetype plugin on
+
+""zs" scrive una copia del file con estensione data.bck nella direcotryu
+"indicata
+
+:map zs :exe "w ~/backupdir/". substitute(expand("%:t"),strftime("-%Y-%m-%d_.*"),""    ,"").strftime("-%Y-%m-%d_%H%M%S").".bck"<CR><CR>
+":colorscheme desert
+:colorscheme delek

@@ -1,0 +1,20 @@
+:set backup
+:set backupext=.bck
+":set backupdir=~/backupdir
+:set mouse=r
+":set mouse=a
+:set nu
+:set ai
+:set sm
+:set laststatus=2
+:set foldmethod=manual
+:map // v%zf
+:map /` /^\s\+/ <enter>
+:set showcmd
+:set showmode
+:set cindent
+:set ruler
+:set vb
+"wrap around
+:set whichwrap=h,l,<,>,[,]
+":%! awk '{print $3}'
