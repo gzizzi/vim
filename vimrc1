@@ -22,6 +22,8 @@
 "rallenta
 ":set cursorline
 
+"// serve per fare la ricerca di cosa è stato selezionato in visual mode
+:vn // y/<C-R>"<CR>
 
 "per latex
 "inutile, tanto per il latex uso kile
