@@ -21,7 +21,7 @@
 :set hlsearch
 :filetype plugin on
 
-""zs" scrive una copia del file con estensione data.bck nella direcotry
+""zs" scrive una copia del file con estensione data.bck nella directory
 "indicata
 
 :map zs :exe "w ~/backupdir/". substitute(expand("%:t"),strftime("-%Y-%m-%d_.*"),""    ,"").strftime("-%Y-%m-%d_%H%M%S").".bck"<CR><CR>
